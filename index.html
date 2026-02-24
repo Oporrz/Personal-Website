@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio | Chanya Phiphatdetsakun</title>
+  <meta name="description" content="Industrial Engineer (IE)" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img class="avatar" src="css/assets/Profile.jpg" alt="Profile photo" />
+        <h1 class="name">Chanya Phiphatdetsakun</h1>
+        <p class="headline">Industrial Engineer (IE) • Food process Engineer (Dual Degree) @KMITL </p>
+
+        <p class="bio">
+          Third-year Industrial Engineering student seeking internship opportunities.
+Experienced in designing data-driven systems for real operational challenges.
+Built and deployed field-tested solutions and represented projects in international competitions.
+        </p>
+
+        <div class="links">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="css/assets/Resume.png" target="_blank" rel="noopener">Resume (PNG)</a>
+        </div>
+
+        <div class="social">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <span>•</span>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <span>•</span>
+          <a href="mailto:66080027@kmitl.ac.th">Email</a>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="mini">
+          <div class="mini-row">
+            <span class="mini-label">Location</span>
+            <span class="mini-value">Bangkok, TH (Open to opportunities regardless of location.)</span>
+          </div>
+          <div class="mini-row">
+            <span class="mini-label">Data Tools</span>
+            <span class="mini-value">Excel • Tableau • Power BI • SQL • Minitab </span>
+          </div>
+          <div class="mini-row">
+            <span class="mini-label">Programming</span>
+            <span class="mini-value">HTML/CSS/JavaScript • Python• Java • UX/UI Design </span>
+          </div>
+          <div class="mini-row">
+            <span class="mini-label">Languages</span>
+            <span class="mini-value">Thai (Native) • English (Intermediate : CEFR B2) • Japanese (JLPT N4)</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- RIGHT CONTENT -->
+    <main class="content">
+      <header class="topbar">
+        <nav class="nav">
+          <a href="#projects">Projects</a>
+          <a href="#Certificate">Certificate</a>
+          <a href="#Activities">Activities</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="toolbar">
+          <input id="search" class="search" type="search" placeholder="Search projects (e.g., Power BI, OCR, SQL)..." />
+          <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle theme">🌓</button>
+        </div>
+      </header>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="section-head">
+          <h2>Portfolio</h2>
+        </div>
+
+        <div class="filters" role="group" aria-label="Project filters">
+          <button class="chip is-active" data-filter="all">All</button>
+          <button class="chip" data-filter="powerbi">Factory KPI</button>
+          <button class="chip" data-filter="POS">POS & ERP System</button>
+          <button class="chip" data-filter="ocr">OCR & AI</button>
+          <button class="chip" data-filter="powerapp">Power App</button>
+        </div>
+
+        <div id="grid" class="grid">
+          <!-- Project 1 -->
+          <article class="card" data-tags="data powerbi sql kpi quality">
+            <a class="card-media" href="project-kpi.html" target="_blank" rel="noopener">
+              <img src="/css/assets/factorymonitering.png" alt="Factory KPI Dashboard" />
+            <div class="card-body">
+              <div class="card-top">
+                <h3> Smart Factory Operations System </h3>
+            </a>
+                <p class="muted">A production analytics platform for small-to-medium beverage factories, built from real operations at a university water plant.</p>
+              </div>
+
+              <ul class="bullets">
+                <li>Real-time production KPI monitoring platform</li>
+                <li>Unified production, QC & maintenance data</li>
+                <li>OEE, throughput, defect & downtime tracking</li>
+                <li>Automated validation & data refresh</li>
+                <li>SQL + Power BI dashboard</li>
+              </ul>
+
+              <div class="tags">
+                <span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">Data Modeling</span>
+              </div>
+
+              <div class="actions">
+                <a class="link" href="#" target="_blank" rel="noopener">Dashboard Demo</a>
+                <a class="link" href="https://github.com/Oporrz?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+  
+          <!-- Project 2 -->
+<article class="card" data-tags="ocr ai api fastapi product">
+
+  <a class="card-media" href="project-trustify.html" target="_blank" rel="noopener">
+    <img src="css/assets/project-trustify.jpg" alt="Trustify Project" />
+  </a>
+
+  <div class="card-body">
+    <div class="card-top">
+
+      <!-- Title clickable -->
+      <h3>
+        <a href="project-trustify.html" target="_blank" rel="noopener" class="card-title">
+          Trustify – AI-Powered Product Authentication Platform
+        </a>
+      </h3>
+
+      <p class="muted">
+        A production-grade cybersecurity web application designed to combat counterfeit products in food, pharmaceutical, and cosmetic industries using OCR and geospatial intelligence.
+      </p>
+
+    </div>
+
+    <ul class="bullets">
+      <li>AI-based text extraction & database verification</li>
+      <li>Authenticity confidence scoring (0–100%)</li>
+      <li>Behavioral anomaly detection</li>
+      <li>Government dashboard with risk heatmap</li>
+    </ul>
+
+    <div class="tags">
+      <span class="tag">OCR</span>
+      <span class="tag">Anti-counterfeit detection</span>
+      <span class="tag">Cloudflare Security</span>
+    </div>
+
+    <div class="actions">
+      <a class="link" href="https://trustify.website" target="_blank" rel="noopener">
+        Website (Live demo under maintenance)
+      </a>
+      <a class="link" href="https://github.com/Oporrz?tab=repositories" target="_blank" rel="noopener">
+        GitHub
+      </a>
+    </div>
+  </div>
+
+</article>
+
+          <!-- Project 3 -->
+          <article class="card" data-tags="impact ie data kpi powerbi">
+            <a class="card-media" href="project-erp-pos.html" target="_blank" rel="noopener">
+              <img src="css/assets/ERP-POS-System-Project-dashboard.png" alt="ERP & POS System Project" />
+            </a>
+            <div class="card-body">
+              <div class="card-top">
+                <h3>ERP & POS System </h3>
+                <p class="muted">Currently pending approval for public disclosure.</p>
+              </div>
+              <div class="tags">
+                <span class="tag">IE</span><span class="tag">Impact</span><span class="tag">Analytics</span>
+              </div>
+
+              <div class="actions">
+                <a class="link" href="https://github.com/Oporrz?tab=repositories" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="Certificate" class="section">
+        <h2>Certificate</h2>
+      </section>
+
+  
+<section id="Activities" class="section">
+  <h2>Activities</h2>
+    <h3>Head Staff & MC — Open House</h3>
+  <p class="sub">Industrial & Food Process Engineering</p>
+  <div class="activity-images">
+    <div>
+      <img src="css/assets/openhouse1.png" alt="Open House Lab Demo">
+      <p class="caption">
+        Demonstrating laboratory quality testing process during Open House
+      </p>
+    </div>
+
+    <div>
+      <img src="css/assets/openhouse2.png" alt="Open House Explanation">
+      <p class="caption">
+        Explaining industrial engineering concepts to 100+ participants
+      </p>
+    </div>
+  </div>
+
+  <h3>Marketing Pitch — Le Pan Bakery (CPRAM Group)</h3>
+<p class="description">
+  Developed marketing strategy and presented business proposal
+  to industry representatives.
+</p>
+
+<h3>Factory Visit — Ichitan Group & KMITL Drinking Water Plant</h3>
+<p class="description">
+  Observed beverage production flow, quality control systems,
+  and KPI tracking in real manufacturing environments.
+</p>
+</section>
+
+
+      <section id="resume" class="section">
+        <h2>Resume</h2>
+        <a class="btn" href="css/assets/Resume.png" target="_blank" rel="noopener">Open Resume</a>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:66080027@kmitl.ac.th">66080027@kmitl.ac.th</a></p>
+      </section>
+
+      <footer class="footer">
+        <span class="muted">© <span id="year"></span> Chanya Phiphatdetsakun </span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
